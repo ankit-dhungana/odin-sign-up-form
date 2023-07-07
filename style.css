@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Popins", sans-serif;
+}
+:root {
+  --invaid-color: #d23737;
+  --vaild-color: #1ec973;
+  --text-color: #121111;
+  --font: "Ysabeau SC", serif;
+}
+
+/* /Ysabeau SC/ -- font for uses*/
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.info-container {
+  width: 40%;
+  background-image: url(src/background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  background-color: #12111181;
+  color: #fff;
+  padding: 2rem;
+  position: relative;
+  top: 20%;
+}
+.wrapper > h1 {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  font-family: var(--font);
+}
+.logo {
+  height: max(15vh, 45%);
+  width: max(10vh, 15%);
+}
+
+.form-container {
+  width: 60%;
+  background-color: aqua;
+}
+.source-container,
+a {
+  color: #fff;
+  font-weight: 200;
+  font-size: 1.2rem;
+  font-family: var(--font);
+  text-align: center;
+  padding: 5px;
+}
