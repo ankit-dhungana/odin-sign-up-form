@@ -51,11 +51,6 @@
   height: max(15vh, 45%);
   width: max(10vh, 15%);
 }
-
-.form-container {
-  width: 60%;
-  background-color: aqua;
-}
 .source-container,
 a {
   color: #fff;
@@ -64,4 +59,70 @@ a {
   font-family: var(--font);
   text-align: center;
   padding: 5px;
+}
+
+.form-wrapper {
+  width: 60%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: splace-around;
+}
+
+.description > p {
+  font-size: 1.8rem;
+  font-family: var(--font);
+  color: #000;
+  padding: 1rem;
+}
+
+.form-container > p {
+  font-size: 1.8rem;
+  font-family: var(--font);
+  color: #000;
+  padding: 1rem;
+}
+.form-container {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: wrap;
+  align-items: center;
+  font-family: var(--font);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+}
+
+input {
+  width: 20rem;
+  height: 2rem;
+  border: 1px solid #4c4b4b;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #0d90d1;
+}
+input:valid {
+  border: 2px solid var(--vaild-color);
+}
+
+/* input:invalid {
+  border: 2px solid var(--invaid-color);
+} */
+.form-fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.form-fields > div {
+  display: flex;
+  flex-direction: column;
 }
