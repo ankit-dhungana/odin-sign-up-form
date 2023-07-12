@@ -87,10 +87,6 @@ a {
 }
 
 form {
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: wrap;
-  align-items: center;
   font-family: var(--font);
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -113,12 +109,12 @@ input:valid {
   border: 2px solid var(--vaild-color);
 }
 
-/* input:invalid {
+input:invalid {
   border: 2px solid var(--invaid-color);
-} */
+}
 .form-fields {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
   gap: 1rem;
 }
