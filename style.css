@@ -7,7 +7,7 @@
   font-family: "Popins", sans-serif;
 }
 :root {
-  --invaid-color: #d23737;
+  --invalid-color: #d23737;
   --vaild-color: #1ec973;
   --text-color: #121111;
   --font: "Ysabeau SC", serif;
@@ -115,14 +115,14 @@ input:valid {
 
 #password,
 #confirm-password {
-  border: 2px solid var(--invaid-color);
+  border: 2px solid var(--invalid-color);
 }
 .error-text {
   font-family: "Popins", sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
   text-transform: none;
-  color: var(--invaid-color);
+  color: var(--invalid-color);
 }
 .form-fields {
   display: flex;

@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const password = passwordInput.value;
     const confirmPassword = confirmPasswordInput.value;
     errorText.style.display = "block";
+    passwordInput.style.border = "2px solid var(--invalid-color)";
+    confirmPasswordInput.style.border = "2px solid var(--invalid-color)";
     if (
       password === confirmPassword &&
       password.length === confirmPassword.length &&
